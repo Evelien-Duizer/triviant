@@ -1,0 +1,36 @@
+# Server
+server:
+  port: ${SERVER_PORT:8080}
+#  ssl:
+#    key-store: classpath:keystore.jks
+#    key-store-password: password
+#    key-password: password
+
+# Spring Datasource
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${JDBC_CONNECTION:jdbc:postgresql://localhost:5432/triviant}
+    username: ${DB_NAME:postgres}
+    password: ${DB_PASSWORD:superuser}
+    testWhileIdle: true
+    validationQuery: SELECT 1
+    hikari:
+      connection-timeout: 60000
+      maximum-pool-size: 5
+
+  # Spring JPA
+  jpa:
+    hibernate:
+      ddl-auto: create
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+      dialect: org.hibernate.dialect.PostgreSQL95Dialect
+    show-sql: false
+
+  flyway:
+    enabled: false
+
+# Bootstrap
+datapopulator:
+  type: hibernate
+  run: ${DB_FILL:true}
