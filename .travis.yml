@@ -7,3 +7,12 @@ cache:
     - $HOME/.sonar/cache
 git:
   depth: 99999
+
+addons:
+  sonarcloud:
+    organization: "evelien-duizer"
+    token:
+      secure: "J/OK1LSZs8u57/7OKQFys5OpwVxAXriSBJNbFIC3KZswI5+bmKMc3VMd2LWj4LhF2g8ZN7P1+T6letuPpAE//Nz6liU+UXEjPEpieFEOaQ4kB2i1gbO9iGm9DR9z4Q33IuiXnDFfFhnk/XnhFj1iaQbHyKt7itnr8VN34yEocmURVHXAX0c83XvL0TCHlcRUN58fBaWKhhg/mzb7UC8egzxNedMD8l8TAGBHNkXhVHML8U3f3xIjptoV9EsHmY+QwkD5mJP/GuytYnmgbPGiSPWJZo+Lcg8K+SBEopkbb/rs7HefR0UgCp3OCrjUda86L+8kNoPwuhkZ8tf6pBYNPCSn9ryzL18Dz8dweVdyDMmUw9roN2IXi2H10wiA9ciWn4nImJB7d5JBnQQy9KbBM82/ZqXQ/7dIdhD3iJ0jbnUxDsCm5vf8X8I66GhZZgpyNBE7CJvCVOAiGUtjClV4cVwg3lLaHvTgiIAGTyic0D87MMTrGCBO8htgRwuv60OIaJ8lK7GnXWfLPoElk5Gkr0k6EJayvrottibA9hBwYdvGZvLAl7DfhKwY12yT3ktH3YdpsdpNzR6ah8ODKfBcV+R5VCQXVJOGhSY/B0a/wuzLeGFD7SME3ozOgATWeaTMGcUbcJY+mI5vUaqR/KGuG1w66iRUs4b9dMacpxk2Oeg="
+
+script:
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=Evelien-Duizer_triviant
