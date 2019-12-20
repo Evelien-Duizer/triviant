@@ -25,68 +25,61 @@ public class HibernateDataPopulator implements InitializingBean {
 
     // SPORTS
     createQuestionCard("Welke wielrenner wordt ook wel de das genoemd?", "Bernard Hinault", Category.SPORTS);
-    createQuestionCard("Hoeveel gouden medailles won Sven Kramer tijdens de Olympische winterspelen van 2010?", "",
-        Category.SPORTS);
-    createQuestionCard("Wie won er goud na de diskwalificatie van Sven Kwamer op de 10km schaatsen tijdens de " +
-        "Olympische winterspelen van 2010?", "", Category.SPORTS);
-    createQuestionCard("Van welke sport is Tjerk Kramer bekend?", "", Category.SPORTS);
-    createQuestionCard("Van welke sport zijn de gebroeders Elmond bekend?", "", Category.SPORTS);
-    createQuestionCard("Welke club werd Nederlands kampioen voetbal in 2006?", "", Category.SPORTS);
-    createQuestionCard("Welke club werd Nederlands kampioen hockey bij de heren in 2012?", "", Category.SPORTS);
-    createQuestionCard("Wat was de naam van de eerste atleet die 100m in minder dan tien seconden aflegde?", "",
+    createQuestionCard("Van welke sport is Tjerk Kramer bekend?", "Waterpolo", Category.SPORTS);
+    createQuestionCard("Van welke sport zijn de gebroeders Elmond bekend?", "Judo", Category.SPORTS);
+    createQuestionCard("Welke club werd Nederlands kampioen voetbal in het seizoen 2006/2007?", "PSV", Category.SPORTS);
+    createQuestionCard("Welke club werd Nederlands kampioen hockey bij de heren in het seizoen 2012/2013?", "Oranje Zwart", Category.SPORTS);
+    createQuestionCard("Wat was de naam van de eerste atleet die 100m in minder dan tien seconden aflegde?", "Jim Hines",
         Category.SPORTS);
 
     // HISTORY
-    createQuestionCard("Wat was het medicijn tegen de 19e eeuwse ‘ziekte’ Hysterie?", "", Category.HISTORY);
-    createQuestionCard("Wat betekent de spreuk ‘Urbi et Orbi‘?", "", Category.HISTORY);
-    createQuestionCard("Wat betekent de spreuk ‘Ora et Labora’?", "", Category.HISTORY);
-    createQuestionCard("Wie was Otto von Bismarck ?", "", Category.HISTORY);
+    createQuestionCard("Wat was het medicijn tegen de 19e eeuwse ‘ziekte’ Hysterie?", "Vibrator", Category.HISTORY);
+    createQuestionCard("Wat betekent de spreuk ‘Urbi et Orbi‘?", "De stad (Rome) en de wereld", Category.HISTORY);
+    createQuestionCard("Wat betekent de spreuk ‘Ora et Labora’?", "Bid en werk", Category.HISTORY);
     createQuestionCard("Welke Franse verlichtingsfilosoof was de eerste die de bekende scheiding der machten(Trias " +
-        "Politica) beschreef ?", "", Category.HISTORY);
-    createQuestionCard("Welke Japanse steden weden in de tweede wereld oorlog gebombardeerd met een atoombom?", "",
+        "Politica) beschreef?", "Charles Montesquieu", Category.HISTORY);
+    createQuestionCard("Welke Japanse steden weden in de tweede wereld oorlog gebombardeerd met een atoombom?", "Nagasaki en Hiroshima",
         Category.HISTORY);
 
     // GEOGRAPHY
-    createQuestionCard("Wat is hoofdstad van de deelstaat West - Falen ?", "", Category.GEOGRAPHY);
-    createQuestionCard("Welke twee grote rivieren stromen door Irak?", "", Category.GEOGRAPHY);
-    createQuestionCard("Wat is de hoogste berg ter wereld?", "", Category.GEOGRAPHY);
-    createQuestionCard("Wat is de hoogste vulkaan ter wereld?", "", Category.GEOGRAPHY);
-    createQuestionCard("In welk land staan de meeste vulkanen?", "", Category.GEOGRAPHY);
-    createQuestionCard("Waar staat de afkorting U.S.S.R.voor?", "", Category.GEOGRAPHY);
-    createQuestionCard("Wie wordt gezien als de grondlegger van het communisme?", "", Category.GEOGRAPHY);
-    createQuestionCard("Wat was de naam van het land dat nu Myanmar heet?", "", Category.GEOGRAPHY);
-    createQuestionCard("Welke stad stond vroeger bekend als Constantinopel?", "", Category.GEOGRAPHY);
+    createQuestionCard("Wat is hoofdstad van de deelstaat West-Falen?", "Düsseldorf", Category.GEOGRAPHY);
+    createQuestionCard("Welke twee grote rivieren stromen door Irak?", "Eufraat en Tigris", Category.GEOGRAPHY);
+    createQuestionCard("Wat is de hoogste berg ter wereld?", "Mount Everest", Category.GEOGRAPHY);
+    createQuestionCard("Wat is de hoogste vulkaan ter wereld?", "Ojos del Salado", Category.GEOGRAPHY);
+    createQuestionCard("Waar staat de afkorting U.S.S.R.voor?", "Unie van Socialistische SovjetRepublieken", Category.GEOGRAPHY);
+    createQuestionCard("Wie wordt gezien als de grondlegger van het communisme?", "Karl Marckx", Category.GEOGRAPHY);
+    createQuestionCard("Wat was de naam van het land dat nu Myanmar heet?", "Birma", Category.GEOGRAPHY);
+    createQuestionCard("Welke stad stond vroeger bekend als Constantinopel?", "Istanbul", Category.GEOGRAPHY);
 
     // SCIENCE
-    createQuestionCard("Hoe heet de Nederlandse wetenschapper die in 2012 zijn baan als president van de KNAW " +
-        "verruilde voor die", "", Category.SCIENCE);
-    createQuestionCard("van directeur van het Institute for Advanced Study?", "", Category.SCIENCE);
-    createQuestionCard("Waarvoor staat de afkorting KNAW?", "", Category.SCIENCE);
+    createQuestionCard("Hoe heet de Nederlandse wetenschapper die in 2012 zijn baan als president van de KNAW" +
+        "verruilde voor die van directeur van het Institute for Advanced Study?", "Robert Dijkgraag", Category.SCIENCE);
+    createQuestionCard("Waarvoor staat de afkorting KNAW?", "Koninklijk Nederlandse Academie voor Wetenschap", Category.SCIENCE);
     createQuestionCard("Welke medische specialisatie richt zich onder meer op het onderzoek naar en de behandeling " +
-        "van kanker?", "", Category.SCIENCE);
+        "van kanker?", "Onologie", Category.SCIENCE);
     createQuestionCard("Welke medische specialisatie houdt zich onder meer bezig met onderzoek naar en behandelingen " +
-        "van de geslachtsorganen van de man.", "", Category.SCIENCE);
+        "van de geslachtsorganen van de man.", "Urologie", Category.SCIENCE);
     createQuestionCard("Welke medische specialisatie houdt zich onder meer bezig met het onderzoek naar en " +
-        "behandeling van de huid ?", "", Category.SCIENCE);
-    createQuestionCard("Wie was de ontdekker van penicelline?", "", Category.SCIENCE);
-    createQuestionCard("Wie was de uitvinder van de atoombom?", "", Category.SCIENCE);
-    createQuestionCard("Wat is een cyclotron?", "", Category.SCIENCE);
-    createQuestionCard("Wie was de uitvinder van het buskruit?", "", Category.SCIENCE);
+        "behandeling van de huid ?", "Dermatologie", Category.SCIENCE);
+    createQuestionCard("Wie was de ontdekker van penicelline?", "Alexander Fleming", Category.SCIENCE);
+    createQuestionCard("Wie wordt ook wel de vader van de atoombom genoemd?", "Robert Oppenheimer", Category.SCIENCE);
+    createQuestionCard("Wat is een cyclotron?", "Een circulaire deeltjesversneller", Category.SCIENCE);
+    createQuestionCard("Wie was de uitvinder van het dynamiet?", "Afred Nobel", Category.SCIENCE);
 
     // ENTERTAINMENT
-    createQuestionCard("Wat was het spel van het jaar 1999?", "", Category.ENTERTAINMENT);
-    createQuestionCard("Welke film won een oscar voor beste animatiefilm in 2013?", "", Category.ENTERTAINMENT);
-    createQuestionCard("Wat was de eerste Nederlandse film die een oscar won?", "", Category.ENTERTAINMENT);
-    createQuestionCard("In welke serie is Carice van Houten te zien als … ?", "", Category.ENTERTAINMENT);
-    createQuestionCard("Welke musical vertelt het verhaal voorafgaande aan The Wizard of Oz?", "",
+    createQuestionCard("Wat was het spel van het jaar 1999?", "Kolonisten van Catan", Category.ENTERTAINMENT);
+    createQuestionCard("Welke film won een oscar voor beste animatiefilm in 2013?", "Frozen", Category.ENTERTAINMENT);
+    createQuestionCard("Wat was de eerste Nederlandse film die een oscar won?", "De Aanslag", Category.ENTERTAINMENT);
+    createQuestionCard("In welke serie is Carice van Houten te zien als 'Melisandre'?", "Game of Thrones", Category.ENTERTAINMENT);
+    createQuestionCard("Welke musical vertelt het verhaal voorafgaande aan The Wizard of Oz?", "Wicked",
         Category.ENTERTAINMENT);
-    createQuestionCard("Welke acteur speelt dokter House in de gelijknamige televisieserie?", "",
+    createQuestionCard("Welke acteur speelt dokter House in de gelijknamige televisieserie?", "Greg ",
         Category.ENTERTAINMENT);
-    createQuestionCard("Wat was de naam het personage van Leonardo di Caprio in de film The Titanic?", "",
+    createQuestionCard("Wat was de naam het personage van Leonardo di Caprio in de film The Titanic?", "Jack Dawson",
         Category.ENTERTAINMENT);
-    createQuestionCard("Wat was de eerste nummer -1 hit van André Hazes?", "", Category.ENTERTAINMENT);
-    createQuestionCard("Wat zijn de namen van de vier Beatles?", "", Category.ENTERTAINMENT);
-    createQuestionCard("Welke mode -ontwerper ontwierp de bruidsjurk van Koningin Maxima?", "", Category.ENTERTAINMENT);
+    createQuestionCard("Wat was de eerste nummer-1 hit van André Hazes?", "Eenzame Kerst", Category.ENTERTAINMENT);
+    createQuestionCard("Wat zijn de namen van de vier Beatles?", "John Lennon, Paul McCartney, George Harrison, Ringo Starr", Category.ENTERTAINMENT);
+    createQuestionCard("Welke mode-ontwerper ontwierp de bruidsjurk van Koningin Maxima?", "Valentino", Category.ENTERTAINMENT);
 
     log.info("Hibernate is done bootstrapping your data...");
   }
