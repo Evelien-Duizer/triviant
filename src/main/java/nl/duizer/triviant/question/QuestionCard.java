@@ -1,5 +1,7 @@
 package nl.duizer.triviant.question;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import java.util.UUID;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -8,11 +10,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
-
-import java.util.UUID;
 
 @Entity
 @Data
@@ -24,7 +22,8 @@ public class QuestionCard {
   private Long id;
 
   @Column(updatable = false, nullable = false)
-  private String uuid = UUID.randomUUID().toString();
+  private String uuid = UUID.randomUUID()
+      .toString();
 
   @NotNull
   private String question;

@@ -3,7 +3,6 @@ package nl.duizer.triviant.bootstrap;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.UUID;
 import java.util.stream.Stream;
 import lombok.extern.slf4j.Slf4j;
 import nl.duizer.triviant.question.Category;
