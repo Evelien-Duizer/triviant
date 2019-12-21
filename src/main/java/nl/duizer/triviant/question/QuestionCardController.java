@@ -17,11 +17,11 @@ public class QuestionCardController {
 
   @GetMapping(value = "/")
   public ResponseEntity<QuestionCard> getQuestionCard(@RequestParam(required = false) String category) {
-    QuestionCard questionCard = null;
-    if (Objects.nonNull(category)) {
-      questionCard = questionCardService.getRandomQuestionCard(category);
-    } else {
+    QuestionCard questionCard;
+    if (Objects.isNull(category)) {
       questionCard = questionCardService.getRandomQuestionCard();
+    } else {
+      questionCard = questionCardService.getRandomQuestionCard(category);
     }
     return ResponseEntity.ok(questionCard);
   }
