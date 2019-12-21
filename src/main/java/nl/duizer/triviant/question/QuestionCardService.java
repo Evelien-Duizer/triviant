@@ -1,11 +1,8 @@
 package nl.duizer.triviant.question;
 
-import lombok.NonNull;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.stereotype.Service;
-
 import java.util.List;
+import lombok.NonNull;
+import org.springframework.stereotype.Service;
 
 @Service
 public class QuestionCardService {
@@ -26,7 +23,7 @@ public class QuestionCardService {
   }
 
   private QuestionCard getRandomQuestionCardFromList(List<QuestionCard> questionCards) {
-    int idx = (int)(Math.random() * questionCards.size());
+    int idx = (int) (Math.random() * questionCards.size());
     return questionCards.get(idx);
   }
 }
