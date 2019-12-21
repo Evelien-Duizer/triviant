@@ -1,7 +1,10 @@
 package nl.duizer.triviant.bootstrap;
 
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.stream.Stream;
 import lombok.extern.slf4j.Slf4j;
@@ -22,14 +25,15 @@ public class HibernateDataPopulator implements InitializingBean {
   }
 
   @Override
-  public void afterPropertiesSet() {
+  public void afterPropertiesSet() throws URISyntaxException {
     log.info("Hibernate is bootstrapping your data...");
 
     log.info("Creating Question Cards!");
 
-    try (Stream<String> stream = Files.lines(Paths.get(this.getClass()
-        .getResource("/questions.csv")
-        .getFile()))) {
+    URI uri = ClassLoader.getSystemResource("").toURI();
+    String mainPath = Paths.get(uri).toString();
+
+    try (Stream<String> stream = Files.lines(Paths.get(mainPath,"/questions.csv"))) {
       stream.forEach(line -> {
         String[] questionArray = line.split(";");
         createQuestionCard(questionArray[0], questionArray[1], questionArray[2], questionArray[3]);
